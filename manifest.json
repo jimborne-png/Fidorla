@@ -1,20 +1,5 @@
-{
-  "name": "Fidorla",
-  "short_name": "Fidorla",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#87ceeb",
-  "icons": [
-    {
-      "src": "./file_00000000aec881f4bb1fee755696be63.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "./file_00000000aec881f4bb1fee755696be63.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
-}
+<svg xmlns="http://w3.org" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="110" fill="#0f172a"/>
+  <circle cx="256" cy="256" r="185" fill="none" stroke="#38bdf8" stroke-width="24"/>
+  <text x="256" y="325" font-family="sans-serif" font-size="220" font-weight="bold" fill="#87ceeb" text-anchor="middle">F</text>
+</svg>
