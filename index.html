@@ -237,7 +237,8 @@ async function askRemoteAPI(t,attachment=null,options={}){
    for(const model of chain){
     if(tried.has(model))continue;tried.add(model);
     lastAutoModel=(groq?'Groq: ':router?'OpenRouter: ':'Modell: ')+model;$('status').textContent=lastAutoModel;
-    const limitKey=p.endpoint+'|'+model; let cap=Math.min(image?800:options.development?8192:2048,options.budget||2048,modelLimits.get(limitKey)||(/qwen\/qwen3\.8-27b/i.test(model)?800:8192));
+    const limitKey=p.endpoint+'|'+model; let cap=Math.min(image?800:options.development?8192:2048,options.budget||2048,modelLimits.get(limitKey)||(/qwen\/qwen3\.8-27b/i.test(model)?3500:8192));
+
     for(let attempt=0;attempt<3;attempt++){
      if(navigator.onLine===false)throw Error('Offline: keine Netzwerkverbindung.');
      const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),35000);
