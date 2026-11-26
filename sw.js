@@ -1,6 +1,6 @@
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open('fidorla-v15').then(cache => {
+    caches.open('fidorla-v16').then(cache => {
       return cache.addAll(['./', './index.html', './manifest.json']);
     })
   );
